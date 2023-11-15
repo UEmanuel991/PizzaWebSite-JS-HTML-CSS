@@ -1,0 +1,160 @@
+body {
+    background-image: url(/media/ofertapizza3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+
+}
+
+.modal {
+    border: 1px solid;
+    width: 96%;
+    border-radius: 10px;
+    left: 2%;
+    position: fixed;
+    background: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    top: 2%;
+    height: 100%;
+    z-index: 14;
+    overflow: auto;
+}
+#modal-login_register {
+    display: none;
+}
+/* .hidden{
+    display: none;
+}
+.visible {
+    display: block;
+} */
+.modal-content {
+ width: 97%;
+}
+
+.imagecontainer {
+    width: 90%;
+    position: fixed;
+    top: 6%;
+    left: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    gap: 162px;
+}
+.imagecontainer img {
+    width: 40px; 
+    align-items: center;
+}
+.imgcontainer {
+    border: 1px solid;
+    width: 54%;
+    border-radius: 10px;
+    left: 10%;
+    position: relative;
+    background: #504c4c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 10px;
+    position: fixed;
+    left: 0%;
+    top: 12%;
+    width: 100%;
+}
+.container input {
+    width: 70%;
+    height: 37px;
+    cursor: pointer;
+    text-align: center;
+}
+.container input:hover {
+    font-size: 22px;
+}
+.label-remember {
+    display: flex;
+    width: 246px;
+    padding: 5px;
+    font-size: 17px;
+    font-family: cursive;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.buttons-btn {
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    cursor: pointer;
+}
+.btn-close {
+    border-radius: 30%;
+    width: 28px;
+    height: 28px;
+    background: #168cf1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    left: 17%;
+}
+.accept-terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+.psw {
+    position: fixed;
+    top: 60%;
+}
+.login-info {
+    height: 315px;
+    position: fixed;
+    border: none;
+    background: #161414d9;;
+    transform: translate(-50%, -50%);
+    top: 28%;
+    left: 50%;
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 13px;
+}
+.login-info p {
+    color: darkgoldenrod;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    line-height: 26px;
+    letter-spacing: 0px;
+    top: 9%;
+    position: fixed;
+}
+

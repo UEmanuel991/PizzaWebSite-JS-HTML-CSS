@@ -1,0 +1,81 @@
+body {
+    height: 100%;
+    background-image: url(../media/pizza-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 75%;
+    left: 3%;
+    top: 5%;
+    width: 95%;
+}
+   
+.menu-title {
+    position: absolute;
+    font-size: 80px;
+    letter-spacing: 15px;
+    color: white;
+    margin-top: 65px;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.container {
+    padding: 40px;
+    color: darkgoldenrod;
+    width: 68%;
+ } 
+.meniuList {
+    padding: 0;
+    /* list-style: none */
+    width: 97%;
+    margin-top: 100px;
+}
+.meniuList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dotted #555;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.menuList li p {
+    margin: 0;
+}
+ 
+.meniuList li .itemDescriptionDetails p:first-of-type{
+    font-weight: bolder;
+}
+.menuList li .itemDescriptionDetails p:last-child {
+    font-size: 14px; 
+    color: rgb(216, 48, 48);
+}
+.menuList .itemPriceDetails {
+    font-weight: bolder;
+}
+.call-now {
+    position: absolute;
+    font-size: 40px;
+    left: 8%;
+    color: white;
+    bottom: 20%;
+    top: 0%;
+    max-width: 50%;
+    text-decoration: none;
+}
+.call-now b {
+    color: darkgoldenrod;
+}

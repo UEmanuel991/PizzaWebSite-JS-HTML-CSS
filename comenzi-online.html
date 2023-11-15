@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/comenzi.css">
+    <script src="/js/script.js" defer></script>
+    <title>Pizza Uno Comenzi online</title>
+</head>
+
+<body class="comenzi-page parallax">
+    <div class="login-info">
+        <p>Pentru a putea comanda online produsele noastre trebuie sa te logezi!</p>
+        <button class="buttons-btn" onclick="showModal('login')">LogIn</button>
+        <center style="color: darkgoldenrod;
+        font-weight: bold;">sau</center>
+        <button class="buttons-btn" onclick="showModal('register')"  style="position: fixed;
+        top: 66%;">Inregistrare</button>
+    </div>
+
+    <div id="modal-login_register" class="modal">
+        <form id="form-login" class="modal-content animate" action="/login.php" method="post">
+            <div class="imagecontainer">
+                <span class="btn-close" title="CloseModal" onclick="hideModal()">X</span>
+                <img src="media/user.png" alt="avatar">
+            </div>
+
+
+            <div class="container">
+                <label for="uname">
+                    <b>UserName</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button class="buttons-btn" type="submit">Login</button>
+                <label class="label-remember">
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>
+                <center>OR</center>
+                <button class="buttons-btn" type="button" onclick="handleLoginRegisterVisibility('register')">Go to register</button>
+            </div>
+            <div class="container">
+                <button style="position: fixed;
+                top: 53%; background: cornflowerblue; color: white;" class="buttons-btn" type="button" onclick="hideModal()" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a style="text-decoration: none;" href="#">password?</a></span>
+            </div>
+        </form>
+        <form id="form-register" class="modal-content animate" method="post" action="/register.php">
+            <div class="imagecontainer">
+                <span class="btn-close" title="Close Modal" onclick="hideModal()">X</span>
+                <img class="imaginea" src="media/user.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <label for="fname"><b>First name</b></label>
+                <input type="text" placeholder="First name" name="fname" required>
+                <label for="lname"><b>Last name</b></label>
+                <input type="text" placeholder="Last name" name="lname" required>
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter your email" name="email" required>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="confirmPass">Password</label>
+                <input type="password" placeholder="Confirm password" name="confirmPass" required>
+                <button class="buttons-btn" type="submit">Register</button>
+                <label class="accept-terms">
+                    <input style="width: 40px;" type="checkbox" checked="checked" name="remember">Accept <a href="#" style="text-decoration: none;"> terms & conditions</a>
+                </label>
+                <center>OR</center>
+                <button class="buttons-btn" type="button" onclick="handleLoginRegisterVisibility('login')">Back to Login</button>
+            </div>
+            <div class="container">
+                <button style="position: fixed;
+                top: 93%; background: cornflowerblue; color: white;" class="buttons-btn" type="button" onclick="hideModal()" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="menu">
+
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
+
+        <div class="listOfMenuLinks">
+            <a href="index.html">Acasa</a>
+            <a href="meniu.html">Meniu</a>
+            <a href="oferta_zilei.html">Oferta zilei</a>
+            <a class="item-comenzi" href="comenzi-online.html">Comenzi online</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="index.html" class="logo">
+            <img src="media/demo-logo.svg" alt="Pizza UNO Logo">
+        </a>
+    </div>
+</body>
+
+</html>

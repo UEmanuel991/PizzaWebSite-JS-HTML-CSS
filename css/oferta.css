@@ -1,0 +1,84 @@
+.parallax {
+  height: 85%;
+  background-image: url(../media/ofertapizza3.jpg) ; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid;
+  
+}
+
+.menu-title {
+    color: rgb(68, 3, 3);
+    background: rgba(241, 211, 140, 0.65);
+    position: absolute;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    margin-bottom: 0px;
+    z-index: 8;
+    position: fixed;
+    width: 100%;
+}
+.menu-title .livrari {
+    font-size: large;
+    font-family: monospace;
+}
+@media (min-width: 690px) {
+    .menu-title .livrari{
+      font-size: 16px;
+      line-height: 5px;
+    }
+
+    
+}
+.menu-title .tel {
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-family: fantasy;
+    color: #021218;
+}
+table.offer-table  {
+    background-color: rgba(241, 211, 140, 0.65);
+    width: 96%;
+    text-align: left;
+    color: rgb(49, 37, 5);
+    border-collapse: collapse;
+    left: 2%;
+    top: 15%;
+    font-family: system-ui;
+    position: absolute;
+    font-weight: 900;
+    overflow: scroll;
+    
+  }
+  #table-head {
+    background-color: rgb(19, 14, 8);
+    font-size: 30px;
+    font-family: cursive;
+    letter-spacing: 5px;
+}
+    
+  table.offer-table  td, table.offer-table  th {
+    padding: 3px 2px;
+    
+  }
+  table.offer-table tbody td {
+    font-size: 17px;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  table.offer-table tr:nth-child(odd) {
+    background-color: #cfe0ca81;;
+  }
+  
+  table.offer-table thead th {
+    font-size: 40px;
+    font-weight: bold;
+   border: none;
+   color: rgb(247, 178, 5);
+  }
+ 

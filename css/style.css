@@ -1,0 +1,357 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  position: relative;
+  font-family: Arial;
+  margin-top: 30px;
+  margin: 0;
+}
+.overflow-hidden {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#home-bg-video {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 13;
+}
+
+.menu .logo {
+  position: absolute;
+  top: 8px;
+  bottom: 0px;
+  left: 10px;
+}
+
+.menu .logo img {
+  max-height: 90%;
+}
+
+.listOfMenuLinks {
+  margin-right: 30px;
+  text-align: center;
+  /* height: 10vh; */
+}
+
+.listOfMenuLinks a {
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.listOfMenuLinks a:hover {
+  color: darkgoldenrod;
+  display: inline-block;
+  transform: scale(1.1);
+}
+
+.logo {
+  transform: rotate(-360deg);
+  transition: all 0.2s ease-out;
+}
+.logo:hover {
+  transform: rotate(360deg);
+  transition: all 0.3s ease-out;
+  background-color: darkgoldenrod;
+}
+
+.listOfMenuLinks .item-comenzi {
+  animation: dancing 0.7s linear infinite;
+}
+@keyframes dancing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hamburger mobile*/
+
+/* Mobile*/
+.menu .menu-btn {
+  visibility: hidden;
+}
+.menu .menu-icon {
+  padding: 25px 15px;
+  position: absolute;
+  right: 20px;
+}
+
+.menu .menu-icon .navicon {
+  background-color: darkgoldenrod;
+  display: block;
+  height: 4px;
+  width: 40px;
+  position: relative;
+}
+/* Hamburger buttons */
+.menu .menu-icon .navicon:before,
+.menu .menu-icon .navicon:after {
+  content: "";
+  background: darkgoldenrod;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease-out;
+}
+.menu .menu-icon .navicon:before {
+  top: 15px;
+}
+.menu .menu-icon .navicon:after {
+  top: -15px;
+}
+/* Click-able hamburger button */
+.menu .menu-btn:checked ~ .listOfMenuLinks {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 10vh;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  background: rgba(0, 0, 0, 0.8);
+  margin-right: 0;
+  visibility: visible;
+}
+.menu .menu-btn:checked ~ .logo {
+  transform: rotate(360deg);
+  transition: all 0.3s ease-out;
+}
+
+.menu .menu-btn:checked ~ .listOfMenuLinks a {
+  font-size: 40px;
+  line-height: 80px;
+  display: block;
+  height: 15vh;
+  position: relative;
+}
+
+.menu .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu .menu-btn:checked ~ .menu-icon .navicon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.menu .menu-btn:checked ~ .menu-icon .navicon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.listOfMenuLinks {
+  margin-right: 30px;
+  visibility: hidden;
+}
+
+.listOfMenuLinks a:hover {
+  color: darkgoldenrod;
+  display: inline-block;
+  transform: scale(1.1);
+}
+
+@media (min-width: 900px) {
+  .listOfMenuLinks a {
+    font-size: 20px;
+  }
+  .menu .menu-btn,
+  .menu .menu-icon {
+    display: none;
+  }
+  .listOfMenuLinks {
+    margin-right: 15px;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1200px) {
+  .listOfMenuLinks a {
+    font-size: 32px;
+  }
+}
+
+/* END MENU*/
+
+.homepage-box {
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 1;
+  color: #fff;
+  width: 55%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  left: 42%;
+  overflow: auto;
+  font-family: emoji;
+  line-height: 1.5;
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  right: 20px;
+  top: 112px;
+  height: 67%;
+}
+
+h1 {
+  font-size: 2rem;
+  display: block;
+  font-weight: bold;
+  margin-left: 25%;
+}
+
+.homepage-box .img1 {
+  float: left;
+  margin-right: 14px;
+  max-width: 50%;
+  height: auto;
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: darkgoldenrod;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+#home-video-btn {
+  background-image: url(/media/stop.png);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: darkgoldenrod;
+  font-size: 44px;
+  padding: 0;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  /* display: none; */
+}
+#home-video-btn.isActive {
+  background-image: url(/media/play.png);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: darkgoldenrod;
+  font-size: 44px;
+  padding: 0;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  display: flex;
+}
+
+/************************************************************/
+/*PAGE MENU*/
+/**************************************************************/
+
+/************************************************************/
+/*PAGE MENU*/
+/* /CONTACT PAGE **************************************************************/
+.harta-contact {
+  width: 100%;
+  height: 100%;
+}
+.main-contact {
+  position: fixed;
+  z-index: 7;
+  width: 50%;
+  left: 45%;
+  background: rgba(0, 0, 0, 0.397);
+  color: #fff;
+  font-weight: bold;
+  font-size: 21px;
+  padding: 35px;
+  box-sizing: border-box;
+  top: 4%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.contact_box {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #382905;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 5px;
+
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.input-contact {
+  height: 30px;
+  width: 65%;
+  border-radius: 4px;
+  background: rgb(229 227 210 / 62%);
+  cursor: pointer;
+  font-size: 18px;
+}
+.input-contact:hover {
+  background: azure;
+  height: 32px;
+}
+.lastP {
+  font-size: 45px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  color: darkslategrey;
+}
+@media (min-width: 1024px) {
+  .contact_box {
+    width: 100%;
+    left: auto;
+    right: 10%;
+    top: 10%;
+  }
+}
+
+.page-contact {
+  background: rgba(0, 0, 0, 0.5);
+}

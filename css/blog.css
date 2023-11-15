@@ -1,0 +1,61 @@
+body {
+    box-sizing: border-box;
+    background-image: url(../media/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+
+.blog h1 {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 6px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+.articleList {
+    
+    position: relative;
+    width: 95%;
+    height: 90%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    border-left: 3px solid darkgoldenrod;
+    color: white;
+    font-size: 20px;
+    width: 93%;
+    margin-bottom: 35px;
+    font-weight: bold;
+    list-style-type: none;
+    background-color: #b3abab82;
+    height: 170px;
+    border-radius: 7px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+li a {
+    text-decoration: none;
+    color: #f89808;
+    font-size: 30px;
+    font-family: inherit;
+}
+li .articleDetails {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+p {
+    margin: 0;
+}
+.more-articleDescription {
+    font-size: 20px;
+    color: white;
+}
+.articleShortDescription {
+    font-size: 20px;
+}
